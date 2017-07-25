@@ -9,6 +9,30 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    
+    @IBOutlet weak var answerOutlet: UILabel!
+    
+    @IBOutlet weak var numberOutlet: UITextField!
+    
+    
+    @IBAction func exchangeButton(_ sender: Any) {
+        
+        let factor = 33.46
+        
+        let douMoney: Double = Double(numberOutlet.text!)!
+        let douAnswer = douMoney * factor
+        
+        answerOutlet.text = "เงินบาทที่แลกได้ \(douAnswer)"
+        
+        
+        
+        
+        
+    }
+    
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
